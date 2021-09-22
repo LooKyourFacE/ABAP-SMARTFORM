@@ -1,0 +1,18 @@
+*&---------------------------------------------------------------------*
+*& Include          ZKONSKYPR_SMARTFORM_TOP
+*&---------------------------------------------------------------------*
+TABLES: sbook, scarr.
+
+* Variable for FM name of Smartform
+DATA: ssf_fm_name TYPE rs38l_fnam.
+
+* Structure of the Inner Join Table
+TYPES: BEGIN OF st_bookings,
+       carrid   TYPE scarr-carrid,
+       bookid   TYPE sbook-bookid,
+       passname TYPE sbook-passname,
+END OF st_bookings.
+
+* Create local table and working area from our structure
+DATA: lt_bookings TYPE STANDARD TABLE OF st_bookings,
+      wa_bookings TYPE st_bookings.
