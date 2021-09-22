@@ -12,7 +12,7 @@
 		<FIRSTTIME>09:48:54</FIRSTTIME>
 		<LASTUSER>KONSKYPR</LASTUSER>
 		<LASTDATE>2021-09-22</LASTDATE>
-		<LASTTIME>11:12:46</LASTTIME>
+		<LASTTIME>14:43:07</LASTTIME>
 	</HEADER>
 	<INTERFACE>
 		<item>
@@ -183,6 +183,7 @@
 										<T_CAPTION>
 											<item>
 												<LANGU>E</LANGU>
+												<FORMNAME>ZKONSKYPR_SSF_FORM</FORMNAME>
 												<OBJTYPE>PA</OBJTYPE>
 												<INAME>%PAGE1</INAME>
 												<CAPTION>New Page</CAPTION>
@@ -195,7 +196,736 @@
 										<sf:NODE>
 											<NODETYPE>WI</NODETYPE>
 											<sf:OBJ>
-												<sf:WINDOW ID="376 ">
+												<sf:WINDOW ID="377 ">
+													<NAME>
+														<INAME>%WINDOW1</INAME>
+													</NAME>
+													<CAPTION>New Window 1</CAPTION>
+													<WTYPE>T</WTYPE>
+													<T_CAPTION>
+														<item>
+															<LANGU>E</LANGU>
+															<FORMNAME>ZKONSKYPR_SSF_FORM</FORMNAME>
+															<OBJTYPE>WI</OBJTYPE>
+															<INAME>%WINDOW1</INAME>
+															<CAPTION>New Window 1</CAPTION>
+														</item>
+													</T_CAPTION>
+													<sf:PROC_CTRL>
+														<sf:NODE ID="401 ">
+															<NODETYPE>RC</NODETYPE>
+															<sf:SUCC>
+																<sf:item>
+																	<sf:NODE>
+																		<NODETYPE>SE</NODETYPE>
+																		<sf:OBJ>
+																			<sf:SECTION>
+																				<NAME>
+																					<INAME>%TEMPLATE1</INAME>
+																				</NAME>
+																				<CAPTION>New Template 1</CAPTION>
+																				<SECTTYPE>S</SECTTYPE>
+																				<OTABTYPE>S</OTABTYPE>
+																				<U_FHEIGHT>CM</U_FHEIGHT>
+																				<PATTERN>
+																					<PATTNUM>0000</PATTNUM>
+																					<FRAME>0.00</FRAME>
+																					<U_FRAME>PT</U_FRAME>
+																				</PATTERN>
+																				<USEBORDER>X</USEBORDER>
+																				<WIDTH>16.00</WIDTH>
+																				<U_WIDTH>CM</U_WIDTH>
+																				<APPMODE>L</APPMODE>
+																				<U_LEFT>MM</U_LEFT>
+																				<U_TOP>CM</U_TOP>
+																				<U_SB>CM</U_SB>
+																				<U_SA>CM</U_SA>
+																				<STATLINES>
+																					<item>
+																						<NAME>%C1</NAME>
+																						<LINEFROM>001</LINEFROM>
+																						<LINETO>001</LINETO>
+																						<LHEIGHT>20.00</LHEIGHT>
+																						<U_LHEIGHT>MM</U_LHEIGHT>
+																						<SHADING>000</SHADING>
+																					</item>
+																				</STATLINES>
+																				<CELLS>
+																					<item>
+																						<NAME>%C1</NAME>
+																						<COLUMNNR>001</COLUMNNR>
+																						<CWIDTH>3.00</CWIDTH>
+																						<U_CWIDTH>CM</U_CWIDTH>
+																						<SHADING>000</SHADING>
+																						<BORDERS>
+																							<item>
+																								<IDX>001</IDX>
+																								<INTENSITY>000</INTENSITY>
+																								<LLEFT>0.00</LLEFT>
+																								<LLEFT_U>MM</LLEFT_U>
+																								<LTOP>0.00</LTOP>
+																								<LTOP_U>MM</LTOP_U>
+																								<LRIGHT>0.00</LRIGHT>
+																								<LRIGHT_U>MM</LRIGHT_U>
+																								<LBOTTOM>0.00</LBOTTOM>
+																								<LBOTTOM_U>MM</LBOTTOM_U>
+																								<FILLCOLOR>
+																									<RED>000</RED>
+																									<GREEN>000</GREEN>
+																									<BLUE>000</BLUE>
+																								</FILLCOLOR>
+																								<CLEFT>
+																									<RED>000</RED>
+																									<GREEN>000</GREEN>
+																									<BLUE>000</BLUE>
+																								</CLEFT>
+																								<CTOP>
+																									<RED>000</RED>
+																									<GREEN>000</GREEN>
+																									<BLUE>000</BLUE>
+																								</CTOP>
+																								<CRIGHT>
+																									<RED>000</RED>
+																									<GREEN>000</GREEN>
+																									<BLUE>000</BLUE>
+																								</CRIGHT>
+																								<CBOTTOM>
+																									<RED>000</RED>
+																									<GREEN>000</GREEN>
+																									<BLUE>000</BLUE>
+																								</CBOTTOM>
+																							</item>
+																							<item>
+																								<IDX>002</IDX>
+																								<INTENSITY>000</INTENSITY>
+																								<LLEFT>0.00</LLEFT>
+																								<LLEFT_U>MM</LLEFT_U>
+																								<LTOP>0.00</LTOP>
+																								<LTOP_U>MM</LTOP_U>
+																								<LRIGHT>0.00</LRIGHT>
+																								<LRIGHT_U>MM</LRIGHT_U>
+																								<LBOTTOM>0.00</LBOTTOM>
+																								<LBOTTOM_U>MM</LBOTTOM_U>
+																								<FILLCOLOR>
+																									<RED>000</RED>
+																									<GREEN>000</GREEN>
+																									<BLUE>000</BLUE>
+																								</FILLCOLOR>
+																								<CLEFT>
+																									<RED>000</RED>
+																									<GREEN>000</GREEN>
+																									<BLUE>000</BLUE>
+																								</CLEFT>
+																								<CTOP>
+																									<RED>000</RED>
+																									<GREEN>000</GREEN>
+																									<BLUE>000</BLUE>
+																								</CTOP>
+																								<CRIGHT>
+																									<RED>000</RED>
+																									<GREEN>000</GREEN>
+																									<BLUE>000</BLUE>
+																								</CRIGHT>
+																								<CBOTTOM>
+																									<RED>000</RED>
+																									<GREEN>000</GREEN>
+																									<BLUE>000</BLUE>
+																								</CBOTTOM>
+																							</item>
+																						</BORDERS>
+																					</item>
+																					<item>
+																						<NAME>%C1</NAME>
+																						<COLUMNNR>002</COLUMNNR>
+																						<CWIDTH>3.00</CWIDTH>
+																						<U_CWIDTH>CM</U_CWIDTH>
+																						<SHADING>000</SHADING>
+																						<BORDERS>
+																							<item>
+																								<IDX>001</IDX>
+																								<INTENSITY>000</INTENSITY>
+																								<LLEFT>0.00</LLEFT>
+																								<LLEFT_U>MM</LLEFT_U>
+																								<LTOP>0.00</LTOP>
+																								<LTOP_U>MM</LTOP_U>
+																								<LRIGHT>0.00</LRIGHT>
+																								<LRIGHT_U>MM</LRIGHT_U>
+																								<LBOTTOM>0.00</LBOTTOM>
+																								<LBOTTOM_U>MM</LBOTTOM_U>
+																								<FILLCOLOR>
+																									<RED>000</RED>
+																									<GREEN>000</GREEN>
+																									<BLUE>000</BLUE>
+																								</FILLCOLOR>
+																								<CLEFT>
+																									<RED>000</RED>
+																									<GREEN>000</GREEN>
+																									<BLUE>000</BLUE>
+																								</CLEFT>
+																								<CTOP>
+																									<RED>000</RED>
+																									<GREEN>000</GREEN>
+																									<BLUE>000</BLUE>
+																								</CTOP>
+																								<CRIGHT>
+																									<RED>000</RED>
+																									<GREEN>000</GREEN>
+																									<BLUE>000</BLUE>
+																								</CRIGHT>
+																								<CBOTTOM>
+																									<RED>000</RED>
+																									<GREEN>000</GREEN>
+																									<BLUE>000</BLUE>
+																								</CBOTTOM>
+																							</item>
+																							<item>
+																								<IDX>002</IDX>
+																								<INTENSITY>000</INTENSITY>
+																								<LLEFT>0.00</LLEFT>
+																								<LLEFT_U>MM</LLEFT_U>
+																								<LTOP>0.00</LTOP>
+																								<LTOP_U>MM</LTOP_U>
+																								<LRIGHT>0.00</LRIGHT>
+																								<LRIGHT_U>MM</LRIGHT_U>
+																								<LBOTTOM>0.00</LBOTTOM>
+																								<LBOTTOM_U>MM</LBOTTOM_U>
+																								<FILLCOLOR>
+																									<RED>000</RED>
+																									<GREEN>000</GREEN>
+																									<BLUE>000</BLUE>
+																								</FILLCOLOR>
+																								<CLEFT>
+																									<RED>000</RED>
+																									<GREEN>000</GREEN>
+																									<BLUE>000</BLUE>
+																								</CLEFT>
+																								<CTOP>
+																									<RED>000</RED>
+																									<GREEN>000</GREEN>
+																									<BLUE>000</BLUE>
+																								</CTOP>
+																								<CRIGHT>
+																									<RED>000</RED>
+																									<GREEN>000</GREEN>
+																									<BLUE>000</BLUE>
+																								</CRIGHT>
+																								<CBOTTOM>
+																									<RED>000</RED>
+																									<GREEN>000</GREEN>
+																									<BLUE>000</BLUE>
+																								</CBOTTOM>
+																							</item>
+																						</BORDERS>
+																					</item>
+																					<item>
+																						<NAME>%C1</NAME>
+																						<COLUMNNR>003</COLUMNNR>
+																						<CWIDTH>10.00</CWIDTH>
+																						<U_CWIDTH>CM</U_CWIDTH>
+																						<SHADING>000</SHADING>
+																						<BORDERS>
+																							<item>
+																								<IDX>001</IDX>
+																								<INTENSITY>000</INTENSITY>
+																								<LLEFT>0.00</LLEFT>
+																								<LLEFT_U>MM</LLEFT_U>
+																								<LTOP>0.00</LTOP>
+																								<LTOP_U>MM</LTOP_U>
+																								<LRIGHT>0.00</LRIGHT>
+																								<LRIGHT_U>MM</LRIGHT_U>
+																								<LBOTTOM>0.00</LBOTTOM>
+																								<LBOTTOM_U>MM</LBOTTOM_U>
+																								<FILLCOLOR>
+																									<RED>000</RED>
+																									<GREEN>000</GREEN>
+																									<BLUE>000</BLUE>
+																								</FILLCOLOR>
+																								<CLEFT>
+																									<RED>000</RED>
+																									<GREEN>000</GREEN>
+																									<BLUE>000</BLUE>
+																								</CLEFT>
+																								<CTOP>
+																									<RED>000</RED>
+																									<GREEN>000</GREEN>
+																									<BLUE>000</BLUE>
+																								</CTOP>
+																								<CRIGHT>
+																									<RED>000</RED>
+																									<GREEN>000</GREEN>
+																									<BLUE>000</BLUE>
+																								</CRIGHT>
+																								<CBOTTOM>
+																									<RED>000</RED>
+																									<GREEN>000</GREEN>
+																									<BLUE>000</BLUE>
+																								</CBOTTOM>
+																							</item>
+																						</BORDERS>
+																					</item>
+																				</CELLS>
+																				<T_CAPTION>
+																					<item>
+																						<LANGU>E</LANGU>
+																						<FORMNAME>ZKONSKYPR_SSF_FORM</FORMNAME>
+																						<OBJTYPE>SE</OBJTYPE>
+																						<INAME>%TEMPLATE1</INAME>
+																						<CAPTION>New Template 1</CAPTION>
+																					</item>
+																				</T_CAPTION>
+																			</sf:SECTION>
+																		</sf:OBJ>
+																		<sf:SUCC>
+																			<sf:item>
+																				<sf:NODE>
+																					<NODETYPE>TI</NODETYPE>
+																					<sf:OBJ>
+																						<sf:TEXT>
+																							<NAME>
+																								<INAME>%TEXT3</INAME>
+																							</NAME>
+																							<CAPTION>New Text 3</CAPTION>
+																							<APPMODE>P</APPMODE>
+																							<TEXT>
+																								<item>
+																									<TDFORMAT>*</TDFORMAT>
+																									<TDLINE>PASSNAME</TDLINE>
+																								</item>
+																							</TEXT>
+																							<STYLE_NAME>SYSTEM</STYLE_NAME>
+																							<TEXT_AREA>
+																								<ENABLED>F</ENABLED>
+																								<NCOLS>0</NCOLS>
+																								<NROWS>0</NROWS>
+																							</TEXT_AREA>
+																							<T_CAPTION>
+																								<item>
+																									<LANGU>E</LANGU>
+																									<OBJTYPE>TI</OBJTYPE>
+																									<INAME>%TEXT3</INAME>
+																									<CAPTION>New Text 3</CAPTION>
+																								</item>
+																							</T_CAPTION>
+																							<T_TEXT>
+																								<item>
+																									<SPRAS>E</SPRAS>
+																									<TXTYPE>F</TXTYPE>
+																									<INAME>%TEXT3</INAME>
+																									<LINENR>000001</LINENR>
+																									<TDFORMAT>*</TDFORMAT>
+																									<TDLINE>PASSNAME</TDLINE>
+																								</item>
+																							</T_TEXT>
+																						</sf:TEXT>
+																					</sf:OBJ>
+																					<sf:OUTATTR>
+																						<sf:OUTATTR>
+																							<NAME>
+																								<INAME>%OUTATTRIB8</INAME>
+																							</NAME>
+																							<T_LINENR>001</T_LINENR>
+																							<T_CELLNR>003</T_CELLNR>
+																							<U_WFRAME>PT</U_WFRAME>
+																							<U_WBOXV>CM</U_WBOXV>
+																							<U_WBOXH>CM</U_WBOXH>
+																							<U_WLEFT>CM</U_WLEFT>
+																							<U_WWIDTH>CM</U_WWIDTH>
+																							<U_WTOP>CM</U_WTOP>
+																							<U_WHEIGHT>CM</U_WHEIGHT>
+																							<BORDER>
+																								<LEFTATTR>
+																									<THICKNESS>0.00</THICKNESS>
+																									<THICKNESSU>PT</THICKNESSU>
+																									<DISTANCE>0.00</DISTANCE>
+																									<DISTANCEU>CM</DISTANCEU>
+																									<COLOR>
+																										<RED>000</RED>
+																										<GREEN>000</GREEN>
+																										<BLUE>000</BLUE>
+																										<TRANS>000</TRANS>
+																									</COLOR>
+																								</LEFTATTR>
+																								<TOPATTR>
+																									<THICKNESS>0.00</THICKNESS>
+																									<THICKNESSU>PT</THICKNESSU>
+																									<DISTANCE>0.00</DISTANCE>
+																									<DISTANCEU>CM</DISTANCEU>
+																									<COLOR>
+																										<RED>000</RED>
+																										<GREEN>000</GREEN>
+																										<BLUE>000</BLUE>
+																										<TRANS>000</TRANS>
+																									</COLOR>
+																								</TOPATTR>
+																								<RIGHTATTR>
+																									<THICKNESS>0.00</THICKNESS>
+																									<THICKNESSU>PT</THICKNESSU>
+																									<DISTANCE>0.00</DISTANCE>
+																									<DISTANCEU>CM</DISTANCEU>
+																									<COLOR>
+																										<RED>000</RED>
+																										<GREEN>000</GREEN>
+																										<BLUE>000</BLUE>
+																										<TRANS>000</TRANS>
+																									</COLOR>
+																								</RIGHTATTR>
+																								<BOTTOMATTR>
+																									<THICKNESS>0.00</THICKNESS>
+																									<THICKNESSU>PT</THICKNESSU>
+																									<DISTANCE>0.00</DISTANCE>
+																									<DISTANCEU>CM</DISTANCEU>
+																									<COLOR>
+																										<RED>000</RED>
+																										<GREEN>000</GREEN>
+																										<BLUE>000</BLUE>
+																										<TRANS>000</TRANS>
+																									</COLOR>
+																								</BOTTOMATTR>
+																							</BORDER>
+																							<T_CAPTION>
+																								<item>
+																									<LANGU>E</LANGU>
+																									<OBJTYPE>OA</OBJTYPE>
+																									<INAME>%OUTATTRIB8</INAME>
+																								</item>
+																							</T_CAPTION>
+																						</sf:OUTATTR>
+																					</sf:OUTATTR>
+																					<sf:SUCC/>
+																				</sf:NODE>
+																			</sf:item>
+																			<sf:item>
+																				<sf:NODE>
+																					<NODETYPE>TI</NODETYPE>
+																					<sf:OBJ>
+																						<sf:TEXT>
+																							<NAME>
+																								<INAME>%TEXT2</INAME>
+																							</NAME>
+																							<CAPTION>New Text 2</CAPTION>
+																							<APPMODE>P</APPMODE>
+																							<TEXT>
+																								<item>
+																									<TDFORMAT>*</TDFORMAT>
+																									<TDLINE>BOOKID</TDLINE>
+																								</item>
+																							</TEXT>
+																							<STYLE_NAME>SYSTEM</STYLE_NAME>
+																							<TEXT_AREA>
+																								<ENABLED>F</ENABLED>
+																								<NCOLS>0</NCOLS>
+																								<NROWS>0</NROWS>
+																							</TEXT_AREA>
+																							<T_CAPTION>
+																								<item>
+																									<LANGU>E</LANGU>
+																									<FORMNAME>ZKONSKYPR_SSF_FORM</FORMNAME>
+																									<OBJTYPE>TI</OBJTYPE>
+																									<INAME>%TEXT2</INAME>
+																									<CAPTION>New Text 2</CAPTION>
+																								</item>
+																							</T_CAPTION>
+																							<T_TEXT>
+																								<item>
+																									<SPRAS>E</SPRAS>
+																									<TXTYPE>F</TXTYPE>
+																									<INAME>%TEXT2</INAME>
+																									<LINENR>000001</LINENR>
+																									<TDFORMAT>*</TDFORMAT>
+																									<TDLINE>BOOKID</TDLINE>
+																								</item>
+																							</T_TEXT>
+																						</sf:TEXT>
+																					</sf:OBJ>
+																					<sf:OUTATTR>
+																						<sf:OUTATTR>
+																							<NAME>
+																								<INAME>%OUTATTRIB11</INAME>
+																							</NAME>
+																							<T_LINENR>001</T_LINENR>
+																							<T_CELLNR>002</T_CELLNR>
+																							<U_WFRAME>PT</U_WFRAME>
+																							<U_WBOXV>CM</U_WBOXV>
+																							<U_WBOXH>CM</U_WBOXH>
+																							<U_WLEFT>CM</U_WLEFT>
+																							<U_WWIDTH>CM</U_WWIDTH>
+																							<U_WTOP>CM</U_WTOP>
+																							<U_WHEIGHT>CM</U_WHEIGHT>
+																							<BORDER>
+																								<LEFTATTR>
+																									<THICKNESS>0.00</THICKNESS>
+																									<THICKNESSU>PT</THICKNESSU>
+																									<DISTANCE>0.00</DISTANCE>
+																									<DISTANCEU>CM</DISTANCEU>
+																									<COLOR>
+																										<RED>000</RED>
+																										<GREEN>000</GREEN>
+																										<BLUE>000</BLUE>
+																										<TRANS>000</TRANS>
+																									</COLOR>
+																								</LEFTATTR>
+																								<TOPATTR>
+																									<THICKNESS>0.00</THICKNESS>
+																									<THICKNESSU>PT</THICKNESSU>
+																									<DISTANCE>0.00</DISTANCE>
+																									<DISTANCEU>CM</DISTANCEU>
+																									<COLOR>
+																										<RED>000</RED>
+																										<GREEN>000</GREEN>
+																										<BLUE>000</BLUE>
+																										<TRANS>000</TRANS>
+																									</COLOR>
+																								</TOPATTR>
+																								<RIGHTATTR>
+																									<THICKNESS>0.00</THICKNESS>
+																									<THICKNESSU>PT</THICKNESSU>
+																									<DISTANCE>0.00</DISTANCE>
+																									<DISTANCEU>CM</DISTANCEU>
+																									<COLOR>
+																										<RED>000</RED>
+																										<GREEN>000</GREEN>
+																										<BLUE>000</BLUE>
+																										<TRANS>000</TRANS>
+																									</COLOR>
+																								</RIGHTATTR>
+																								<BOTTOMATTR>
+																									<THICKNESS>0.00</THICKNESS>
+																									<THICKNESSU>PT</THICKNESSU>
+																									<DISTANCE>0.00</DISTANCE>
+																									<DISTANCEU>CM</DISTANCEU>
+																									<COLOR>
+																										<RED>000</RED>
+																										<GREEN>000</GREEN>
+																										<BLUE>000</BLUE>
+																										<TRANS>000</TRANS>
+																									</COLOR>
+																								</BOTTOMATTR>
+																							</BORDER>
+																							<T_CAPTION>
+																								<item>
+																									<LANGU>E</LANGU>
+																									<FORMNAME>ZKONSKYPR_SSF_FORM</FORMNAME>
+																									<OBJTYPE>OA</OBJTYPE>
+																									<INAME>%OUTATTRIB11</INAME>
+																								</item>
+																							</T_CAPTION>
+																						</sf:OUTATTR>
+																					</sf:OUTATTR>
+																					<sf:SUCC/>
+																				</sf:NODE>
+																			</sf:item>
+																			<sf:item>
+																				<sf:NODE>
+																					<NODETYPE>TI</NODETYPE>
+																					<sf:OBJ>
+																						<sf:TEXT>
+																							<NAME>
+																								<INAME>%TEXT1</INAME>
+																							</NAME>
+																							<CAPTION>New Text 1</CAPTION>
+																							<APPMODE>P</APPMODE>
+																							<TEXT>
+																								<item>
+																									<TDFORMAT>*</TDFORMAT>
+																									<TDLINE>CARRID</TDLINE>
+																								</item>
+																							</TEXT>
+																							<STYLE_NAME>SYSTEM</STYLE_NAME>
+																							<TEXT_AREA>
+																								<ENABLED>F</ENABLED>
+																								<NCOLS>0</NCOLS>
+																								<NROWS>0</NROWS>
+																							</TEXT_AREA>
+																							<T_CAPTION>
+																								<item>
+																									<LANGU>E</LANGU>
+																									<FORMNAME>ZKONSKYPR_SSF_FORM</FORMNAME>
+																									<OBJTYPE>TI</OBJTYPE>
+																									<INAME>%TEXT1</INAME>
+																									<CAPTION>New Text 1</CAPTION>
+																								</item>
+																							</T_CAPTION>
+																							<T_TEXT>
+																								<item>
+																									<SPRAS>E</SPRAS>
+																									<TXTYPE>F</TXTYPE>
+																									<INAME>%TEXT1</INAME>
+																									<LINENR>000001</LINENR>
+																									<TDFORMAT>*</TDFORMAT>
+																									<TDLINE>CARRID</TDLINE>
+																								</item>
+																							</T_TEXT>
+																						</sf:TEXT>
+																					</sf:OBJ>
+																					<sf:OUTATTR>
+																						<sf:OUTATTR>
+																							<NAME>
+																								<INAME>%OUTATTRIB7</INAME>
+																							</NAME>
+																							<T_LINENR>001</T_LINENR>
+																							<T_CELLNR>001</T_CELLNR>
+																							<U_WFRAME>PT</U_WFRAME>
+																							<U_WBOXV>CM</U_WBOXV>
+																							<U_WBOXH>CM</U_WBOXH>
+																							<U_WLEFT>CM</U_WLEFT>
+																							<U_WWIDTH>CM</U_WWIDTH>
+																							<U_WTOP>CM</U_WTOP>
+																							<U_WHEIGHT>CM</U_WHEIGHT>
+																							<BORDER>
+																								<LEFTATTR>
+																									<THICKNESS>0.00</THICKNESS>
+																									<THICKNESSU>PT</THICKNESSU>
+																									<DISTANCE>0.00</DISTANCE>
+																									<DISTANCEU>CM</DISTANCEU>
+																									<COLOR>
+																										<RED>000</RED>
+																										<GREEN>000</GREEN>
+																										<BLUE>000</BLUE>
+																										<TRANS>000</TRANS>
+																									</COLOR>
+																								</LEFTATTR>
+																								<TOPATTR>
+																									<THICKNESS>0.00</THICKNESS>
+																									<THICKNESSU>PT</THICKNESSU>
+																									<DISTANCE>0.00</DISTANCE>
+																									<DISTANCEU>CM</DISTANCEU>
+																									<COLOR>
+																										<RED>000</RED>
+																										<GREEN>000</GREEN>
+																										<BLUE>000</BLUE>
+																										<TRANS>000</TRANS>
+																									</COLOR>
+																								</TOPATTR>
+																								<RIGHTATTR>
+																									<THICKNESS>0.00</THICKNESS>
+																									<THICKNESSU>PT</THICKNESSU>
+																									<DISTANCE>0.00</DISTANCE>
+																									<DISTANCEU>CM</DISTANCEU>
+																									<COLOR>
+																										<RED>000</RED>
+																										<GREEN>000</GREEN>
+																										<BLUE>000</BLUE>
+																										<TRANS>000</TRANS>
+																									</COLOR>
+																								</RIGHTATTR>
+																								<BOTTOMATTR>
+																									<THICKNESS>0.00</THICKNESS>
+																									<THICKNESSU>PT</THICKNESSU>
+																									<DISTANCE>0.00</DISTANCE>
+																									<DISTANCEU>CM</DISTANCEU>
+																									<COLOR>
+																										<RED>000</RED>
+																										<GREEN>000</GREEN>
+																										<BLUE>000</BLUE>
+																										<TRANS>000</TRANS>
+																									</COLOR>
+																								</BOTTOMATTR>
+																							</BORDER>
+																							<T_CAPTION>
+																								<item>
+																									<LANGU>E</LANGU>
+																									<FORMNAME>ZKONSKYPR_SSF_FORM</FORMNAME>
+																									<OBJTYPE>OA</OBJTYPE>
+																									<INAME>%OUTATTRIB7</INAME>
+																								</item>
+																							</T_CAPTION>
+																						</sf:OUTATTR>
+																					</sf:OUTATTR>
+																					<sf:SUCC/>
+																				</sf:NODE>
+																			</sf:item>
+																		</sf:SUCC>
+																	</sf:NODE>
+																</sf:item>
+															</sf:SUCC>
+														</sf:NODE>
+													</sf:PROC_CTRL>
+												</sf:WINDOW>
+											</sf:OBJ>
+											<sf:OUTATTR>
+												<sf:OUTATTR>
+													<NAME>
+														<INAME>%OUTATTRIB6</INAME>
+													</NAME>
+													<U_WFRAME>PT</U_WFRAME>
+													<U_WBOXV>CM</U_WBOXV>
+													<U_WBOXH>CM</U_WBOXH>
+													<WLEFT>2.50</WLEFT>
+													<U_WLEFT>CM</U_WLEFT>
+													<WWIDTH>16.00</WWIDTH>
+													<U_WWIDTH>CM</U_WWIDTH>
+													<WTOP>1.50</WTOP>
+													<U_WTOP>CM</U_WTOP>
+													<WHEIGHT>2.00</WHEIGHT>
+													<U_WHEIGHT>CM</U_WHEIGHT>
+													<BORDER>
+														<LEFTATTR>
+															<THICKNESS>0.00</THICKNESS>
+															<THICKNESSU>PT</THICKNESSU>
+															<DISTANCE>0.00</DISTANCE>
+															<DISTANCEU>CM</DISTANCEU>
+															<COLOR>
+																<RED>000</RED>
+																<GREEN>000</GREEN>
+																<BLUE>000</BLUE>
+																<TRANS>000</TRANS>
+															</COLOR>
+														</LEFTATTR>
+														<TOPATTR>
+															<THICKNESS>0.00</THICKNESS>
+															<THICKNESSU>PT</THICKNESSU>
+															<DISTANCE>0.00</DISTANCE>
+															<DISTANCEU>CM</DISTANCEU>
+															<COLOR>
+																<RED>000</RED>
+																<GREEN>000</GREEN>
+																<BLUE>000</BLUE>
+																<TRANS>000</TRANS>
+															</COLOR>
+														</TOPATTR>
+														<RIGHTATTR>
+															<THICKNESS>0.00</THICKNESS>
+															<THICKNESSU>PT</THICKNESSU>
+															<DISTANCE>0.00</DISTANCE>
+															<DISTANCEU>CM</DISTANCEU>
+															<COLOR>
+																<RED>000</RED>
+																<GREEN>000</GREEN>
+																<BLUE>000</BLUE>
+																<TRANS>000</TRANS>
+															</COLOR>
+														</RIGHTATTR>
+														<BOTTOMATTR>
+															<THICKNESS>0.00</THICKNESS>
+															<THICKNESSU>PT</THICKNESSU>
+															<DISTANCE>0.00</DISTANCE>
+															<DISTANCEU>CM</DISTANCEU>
+															<COLOR>
+																<RED>000</RED>
+																<GREEN>000</GREEN>
+																<BLUE>000</BLUE>
+																<TRANS>000</TRANS>
+															</COLOR>
+														</BOTTOMATTR>
+													</BORDER>
+													<T_CAPTION>
+														<item>
+															<LANGU>E</LANGU>
+															<FORMNAME>ZKONSKYPR_SSF_FORM</FORMNAME>
+															<OBJTYPE>OA</OBJTYPE>
+															<INAME>%OUTATTRIB6</INAME>
+														</item>
+													</T_CAPTION>
+												</sf:OUTATTR>
+											</sf:OUTATTR>
+											<sf:SUCC/>
+										</sf:NODE>
+									</sf:item>
+									<sf:item>
+										<sf:NODE>
+											<NODETYPE>WI</NODETYPE>
+											<sf:OBJ>
+												<sf:WINDOW ID="1464 ">
 													<NAME>
 														<INAME>MAIN</INAME>
 													</NAME>
@@ -204,13 +934,14 @@
 													<T_CAPTION>
 														<item>
 															<LANGU>E</LANGU>
+															<FORMNAME>ZKONSKYPR_SSF_FORM</FORMNAME>
 															<OBJTYPE>WI</OBJTYPE>
 															<INAME>MAIN</INAME>
 															<CAPTION>Main Window</CAPTION>
 														</item>
 													</T_CAPTION>
 													<sf:PROC_CTRL>
-														<sf:NODE ID="399 ">
+														<sf:NODE ID="1488 ">
 															<NODETYPE>RC</NODETYPE>
 															<sf:SUCC>
 																<sf:item>
@@ -256,7 +987,7 @@
 																					<item>
 																						<NAME>%LTYPE1</NAME>
 																						<COLUMNNR>001</COLUMNNR>
-																						<CWIDTH>1.00</CWIDTH>
+																						<CWIDTH>3.00</CWIDTH>
 																						<U_CWIDTH>CM</U_CWIDTH>
 																						<SHADING>000</SHADING>
 																						<BORDERS>
@@ -348,7 +1079,7 @@
 																					<item>
 																						<NAME>%LTYPE1</NAME>
 																						<COLUMNNR>003</COLUMNNR>
-																						<CWIDTH>12.00</CWIDTH>
+																						<CWIDTH>10.00</CWIDTH>
 																						<U_CWIDTH>CM</U_CWIDTH>
 																						<SHADING>000</SHADING>
 																						<BORDERS>
@@ -395,6 +1126,7 @@
 																				<T_CAPTION>
 																					<item>
 																						<LANGU>E</LANGU>
+																						<FORMNAME>ZKONSKYPR_SSF_FORM</FORMNAME>
 																						<OBJTYPE>SE</OBJTYPE>
 																						<INAME>%TABLE1</INAME>
 																						<CAPTION>New Table 1</CAPTION>
@@ -416,6 +1148,7 @@
 																							<T_CAPTION>
 																								<item>
 																									<LANGU>E</LANGU>
+																									<FORMNAME>ZKONSKYPR_SSF_FORM</FORMNAME>
 																									<OBJTYPE>EV</OBJTYPE>
 																									<INAME>%EVENT1</INAME>
 																									<CAPTION>Header</CAPTION>
@@ -439,6 +1172,7 @@
 																							<T_CAPTION>
 																								<item>
 																									<LANGU>E</LANGU>
+																									<FORMNAME>ZKONSKYPR_SSF_FORM</FORMNAME>
 																									<OBJTYPE>EV</OBJTYPE>
 																									<INAME>%EVENT2</INAME>
 																									<CAPTION>Main Area</CAPTION>
@@ -471,6 +1205,7 @@
 																										<T_CAPTION>
 																											<item>
 																												<LANGU>E</LANGU>
+																												<FORMNAME>ZKONSKYPR_SSF_FORM</FORMNAME>
 																												<OBJTYPE>SE</OBJTYPE>
 																												<INAME>%ROW1</INAME>
 																												<CAPTION>New Row 1</CAPTION>
@@ -544,6 +1279,7 @@
 																										<T_CAPTION>
 																											<item>
 																												<LANGU>E</LANGU>
+																												<FORMNAME>ZKONSKYPR_SSF_FORM</FORMNAME>
 																												<OBJTYPE>OA</OBJTYPE>
 																												<INAME>%OUTATTRIB2</INAME>
 																											</item>
@@ -575,6 +1311,7 @@
 																													<T_CAPTION>
 																														<item>
 																															<LANGU>E</LANGU>
+																															<FORMNAME>ZKONSKYPR_SSF_FORM</FORMNAME>
 																															<OBJTYPE>SE</OBJTYPE>
 																															<INAME>%CELL1</INAME>
 																															<CAPTION>New Column 1</CAPTION>
@@ -647,6 +1384,7 @@
 																													<T_CAPTION>
 																														<item>
 																															<LANGU>E</LANGU>
+																															<FORMNAME>ZKONSKYPR_SSF_FORM</FORMNAME>
 																															<OBJTYPE>OA</OBJTYPE>
 																															<INAME>%OUTATTRIB3</INAME>
 																														</item>
@@ -679,6 +1417,7 @@
 																																<T_CAPTION>
 																																	<item>
 																																		<LANGU>E</LANGU>
+																																		<FORMNAME>ZKONSKYPR_SSF_FORM</FORMNAME>
 																																		<OBJTYPE>TI</OBJTYPE>
 																																		<INAME>CARRID</INAME>
 																																	</item>
@@ -725,6 +1464,7 @@
 																													<T_CAPTION>
 																														<item>
 																															<LANGU>E</LANGU>
+																															<FORMNAME>ZKONSKYPR_SSF_FORM</FORMNAME>
 																															<OBJTYPE>SE</OBJTYPE>
 																															<INAME>%CELL2</INAME>
 																															<CAPTION>New Column 2</CAPTION>
@@ -797,6 +1537,7 @@
 																													<T_CAPTION>
 																														<item>
 																															<LANGU>E</LANGU>
+																															<FORMNAME>ZKONSKYPR_SSF_FORM</FORMNAME>
 																															<OBJTYPE>OA</OBJTYPE>
 																															<INAME>%OUTATTRIB4</INAME>
 																														</item>
@@ -829,6 +1570,7 @@
 																																<T_CAPTION>
 																																	<item>
 																																		<LANGU>E</LANGU>
+																																		<FORMNAME>ZKONSKYPR_SSF_FORM</FORMNAME>
 																																		<OBJTYPE>TI</OBJTYPE>
 																																		<INAME>BOOKID</INAME>
 																																	</item>
@@ -875,6 +1617,7 @@
 																													<T_CAPTION>
 																														<item>
 																															<LANGU>E</LANGU>
+																															<FORMNAME>ZKONSKYPR_SSF_FORM</FORMNAME>
 																															<OBJTYPE>SE</OBJTYPE>
 																															<INAME>%CELL3</INAME>
 																															<CAPTION>New Column 3</CAPTION>
@@ -947,6 +1690,7 @@
 																													<T_CAPTION>
 																														<item>
 																															<LANGU>E</LANGU>
+																															<FORMNAME>ZKONSKYPR_SSF_FORM</FORMNAME>
 																															<OBJTYPE>OA</OBJTYPE>
 																															<INAME>%OUTATTRIB5</INAME>
 																														</item>
@@ -979,6 +1723,7 @@
 																																<T_CAPTION>
 																																	<item>
 																																		<LANGU>E</LANGU>
+																																		<FORMNAME>ZKONSKYPR_SSF_FORM</FORMNAME>
 																																		<OBJTYPE>TI</OBJTYPE>
 																																		<INAME>PASSNAME</INAME>
 																																	</item>
@@ -1020,6 +1765,7 @@
 																							<T_CAPTION>
 																								<item>
 																									<LANGU>E</LANGU>
+																									<FORMNAME>ZKONSKYPR_SSF_FORM</FORMNAME>
 																									<OBJTYPE>EV</OBJTYPE>
 																									<INAME>%EVENT3</INAME>
 																									<CAPTION>Footer</CAPTION>
@@ -1108,6 +1854,7 @@
 													<T_CAPTION>
 														<item>
 															<LANGU>E</LANGU>
+															<FORMNAME>ZKONSKYPR_SSF_FORM</FORMNAME>
 															<OBJTYPE>OA</OBJTYPE>
 															<INAME>%OUTATTRIB1</INAME>
 															<CAPTION>New Display Option</CAPTION>
