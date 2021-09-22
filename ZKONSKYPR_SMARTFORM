@@ -65,30 +65,36 @@ ENDFORM.
 *& <--  p2        text
 *&---------------------------------------------------------------------*
 FORM call_smartform .
+  DATA:l_s_ssfctrlop type ssfctrlop.
+  DATA:l_s_output_options type ssfcompop.
 
+   l_s_ssfctrlop-PREVIEW = 'X'.
+   l_s_ssfctrlop-NO_DIALOG = 'X'.
+   l_s_ssfctrlop-DEVICE = 'PRINTER'.
+   l_s_output_options-tddest = 'LOCL'.
 
 CALL FUNCTION ssf_fm_name
   EXPORTING
 *   ARCHIVE_INDEX              =
 *   ARCHIVE_INDEX_TAB          =
 *   ARCHIVE_PARAMETERS         =
-*   CONTROL_PARAMETERS         =
+    CONTROL_PARAMETERS         = l_s_ssfctrlop
 *   MAIL_APPL_OBJ              =
 *   MAIL_RECIPIENT             =
 *   MAIL_SENDER                =
-*   OUTPUT_OPTIONS             =
-*   USER_SETTINGS              = 'X'
+    OUTPUT_OPTIONS             = l_s_output_options
+    USER_SETTINGS              = SPACE    "MANDATORY TO BE
     lt_books                   = lt_bookings
 * IMPORTING
 *   DOCUMENT_OUTPUT_INFO       =
 *   JOB_OUTPUT_INFO            =
 *   JOB_OUTPUT_OPTIONS         =
-* EXCEPTIONS
-*   FORMATTING_ERROR           = 1
-*   INTERNAL_ERROR             = 2
-*   SEND_ERROR                 = 3
-*   USER_CANCELED              = 4
-*   OTHERS                     = 5
+ EXCEPTIONS
+   FORMATTING_ERROR           = 1
+   INTERNAL_ERROR             = 2
+   SEND_ERROR                 = 3
+   USER_CANCELED              = 4
+   OTHERS                     = 5
           .
 IF sy-subrc <> 0.
 * Implement suitable error handling here
