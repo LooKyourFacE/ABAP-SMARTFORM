@@ -1,103 +1,32 @@
 *&---------------------------------------------------------------------*
-*& Report ZKONSKYPR_SMARTFORM
+*& Report ZKONSKYPR_EXCEL
 *&---------------------------------------------------------------------*
-*& Author: Konstantinos Kyprianidis
-*& Date: 22/09/2021
-*& Smartform Test
+*& Author: Konstantinos Kyprianidis
+*& Date: 22/09/2021
+*& Upload excel file
 *&---------------------------------------------------------------------*
-REPORT zkonskypr_smartform.
+REPORT zkonskypr_excel.
 
-INCLUDE zkonskypr_smartform_top.
+INCLUDE zkonskypr_excel_top.
 
 START-OF-SELECTION.
-PERFORM get_data.
-PERFORM get_smartform_name.
-PERFORM call_smartform.
 
-
-*&---------------------------------------------------------------------*
-*& Form get_data
-*&---------------------------------------------------------------------*
-*& text
-*&---------------------------------------------------------------------*
-*& -->  p1        text
-*& <--  p2        text
-*&---------------------------------------------------------------------*
-FORM get_data .
-
-SELECT scarr~carrid sbook~bookid sbook~passname
-  INTO TABLE lt_bookings
-  FROM scarr AS scarr INNER JOIN sbook AS sbook ON scarr~carrid = sbook~carrid UP TO 100 rows.
-
-ENDFORM.
-
-*&---------------------------------------------------------------------*
-*& Form get_smartform_name
-*&---------------------------------------------------------------------*
-*& text
-*&---------------------------------------------------------------------*
-*& -->  p1        text
-*& <--  p2        text
-*&---------------------------------------------------------------------*
-FORM get_smartform_name .
-
-* Convert the Smartform name into FM.
-CALL FUNCTION 'SSF_FUNCTION_MODULE_NAME'
-  EXPORTING
-    formname                 = 'ZKONSKYPR_SSF_FORM'
-*   VARIANT                  = ' '
-*   DIRECT_CALL              = ' '
- IMPORTING
-   fm_name                  = ssf_fm_name
- EXCEPTIONS
-   no_form                  = 1
-   no_function_module       = 2
-   OTHERS                   = 3.
-
-ENDFORM.
-
-*&---------------------------------------------------------------------*
-*& Form call_smartform
-*&---------------------------------------------------------------------*
-*& text
-*&---------------------------------------------------------------------*
-*& -->  p1        text
-*& <--  p2        text
-*&---------------------------------------------------------------------*
-FORM call_smartform .
-  DATA:l_s_ssfctrlop type ssfctrlop.
-  DATA:l_s_output_options type ssfcompop.
-
-   l_s_ssfctrlop-PREVIEW = 'X'.
-   l_s_ssfctrlop-NO_DIALOG = 'X'.
-   l_s_ssfctrlop-DEVICE = 'PRINTER'.
-   l_s_output_options-tddest = 'LOCL'.
-
-CALL FUNCTION ssf_fm_name
-  EXPORTING
-*   ARCHIVE_INDEX              =
-*   ARCHIVE_INDEX_TAB          =
-*   ARCHIVE_PARAMETERS         =
-    CONTROL_PARAMETERS         = l_s_ssfctrlop
-*   MAIL_APPL_OBJ              =
-*   MAIL_RECIPIENT             =
-*   MAIL_SENDER                =
-    OUTPUT_OPTIONS             = l_s_output_options
-    USER_SETTINGS              = SPACE    "MANDATORY TO BE
-    lt_books                   = lt_bookings
-* IMPORTING
-*   DOCUMENT_OUTPUT_INFO       =
-*   JOB_OUTPUT_INFO            =
-*   JOB_OUTPUT_OPTIONS         =
- EXCEPTIONS
-   FORMATTING_ERROR           = 1
-   INTERNAL_ERROR             = 2
-   SEND_ERROR                 = 3
-   USER_CANCELED              = 4
-   OTHERS                     = 5
-          .
-IF sy-subrc <> 0.
-* Implement suitable error handling here
-ENDIF.
-
-ENDFORM.
+* Upload excel file
+    CALL FUNCTION 'TEXT_CONVERT_XLS_TO_SAP'
+      EXPORTING
+*       I_FIELD_SEPERATOR    =
+        i_line_header        = 'X' "In case the excel have header line
+        i_tab_raw_data       = lt_raw_data
+        i_filename           = p_path
+      TABLES
+        i_tab_converted_data = lt_data_temp
+      EXCEPTIONS
+        conversion_failed    = 1
+        OTHERS               = 2.
+    IF sy-subrc <> 0.
+      MESSAGE 'Error on uploading the file' TYPE 'E'.
+    ELSE.
+      LOOP AT lt_data_temp INTO wa_data_temp.
+          APPEND wa_data_temp TO lt_bookings.
+      ENDLOOP.
+    ENDIF.
