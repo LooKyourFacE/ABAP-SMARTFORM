@@ -1,0 +1,97 @@
+*&---------------------------------------------------------------------*
+*& Report ZKONSKYPR_SMARTFORM
+*&---------------------------------------------------------------------*
+*& Author: Konstantinos Kyprianidis
+*& Date: 22/09/2021
+*& Smartform Test
+*&---------------------------------------------------------------------*
+REPORT zkonskypr_smartform.
+
+INCLUDE zkonskypr_smartform_top.
+
+START-OF-SELECTION.
+PERFORM get_data.
+PERFORM get_smartform_name.
+PERFORM call_smartform.
+
+
+*&---------------------------------------------------------------------*
+*& Form get_data
+*&---------------------------------------------------------------------*
+*& text
+*&---------------------------------------------------------------------*
+*& -->  p1        text
+*& <--  p2        text
+*&---------------------------------------------------------------------*
+FORM get_data .
+
+SELECT scarr~carrid sbook~bookid sbook~passname
+  INTO TABLE lt_bookings
+  FROM scarr AS scarr INNER JOIN sbook AS sbook ON scarr~carrid = sbook~carrid UP TO 100 rows.
+
+ENDFORM.
+
+*&---------------------------------------------------------------------*
+*& Form get_smartform_name
+*&---------------------------------------------------------------------*
+*& text
+*&---------------------------------------------------------------------*
+*& -->  p1        text
+*& <--  p2        text
+*&---------------------------------------------------------------------*
+FORM get_smartform_name .
+
+* Convert the Smartform name into FM.
+CALL FUNCTION 'SSF_FUNCTION_MODULE_NAME'
+  EXPORTING
+    formname                 = 'ZKONSKYPR_SSF_FORM'
+*   VARIANT                  = ' '
+*   DIRECT_CALL              = ' '
+ IMPORTING
+   fm_name                  = ssf_fm_name
+ EXCEPTIONS
+   no_form                  = 1
+   no_function_module       = 2
+   OTHERS                   = 3.
+
+ENDFORM.
+
+*&---------------------------------------------------------------------*
+*& Form call_smartform
+*&---------------------------------------------------------------------*
+*& text
+*&---------------------------------------------------------------------*
+*& -->  p1        text
+*& <--  p2        text
+*&---------------------------------------------------------------------*
+FORM call_smartform .
+
+
+CALL FUNCTION ssf_fm_name
+  EXPORTING
+*   ARCHIVE_INDEX              =
+*   ARCHIVE_INDEX_TAB          =
+*   ARCHIVE_PARAMETERS         =
+*   CONTROL_PARAMETERS         =
+*   MAIL_APPL_OBJ              =
+*   MAIL_RECIPIENT             =
+*   MAIL_SENDER                =
+*   OUTPUT_OPTIONS             =
+*   USER_SETTINGS              = 'X'
+    lt_books                   = lt_bookings
+* IMPORTING
+*   DOCUMENT_OUTPUT_INFO       =
+*   JOB_OUTPUT_INFO            =
+*   JOB_OUTPUT_OPTIONS         =
+* EXCEPTIONS
+*   FORMATTING_ERROR           = 1
+*   INTERNAL_ERROR             = 2
+*   SEND_ERROR                 = 3
+*   USER_CANCELED              = 4
+*   OTHERS                     = 5
+          .
+IF sy-subrc <> 0.
+* Implement suitable error handling here
+ENDIF.
+
+ENDFORM.
